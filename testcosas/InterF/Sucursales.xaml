@@ -1,0 +1,57 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="testcosas.Sucursales"
+             Title="Sucursales"
+             Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions=".1*, .7*">
+
+        <Image Source="bl.png" Aspect="AspectFit" BackgroundColor="red"/>
+
+ 
+        <ScrollView Grid.Row="1">
+
+            <Frame BackgroundColor="White" CornerRadius="40">
+
+                <StackLayout>
+  
+                    <Label Text="Sucursales"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           TextColor="#2D2D2D"
+                           HorizontalOptions="Center"
+                      
+                           
+                           
+                           />
+
+
+                    <Label    ScaleY="2"/>
+
+
+                    <StackLayout Orientation="Vertical" HorizontalOptions="Fill">
+         
+                        <StackLayout>
+                            <Label Text="Sucursal Centro" HorizontalOptions="Center" TextColor="#2D2D2D" FontAttributes="Bold"/>
+                            <Image Source="cas1.jpg" WidthRequest="400" HeightRequest="250" Margin="10"/>
+                            <Label Text="Direccion:" HorizontalOptions="Center" TextColor="#2D2D2D" FontAttributes="Bold"/>
+                            <Label Text="Av.Pedro Vicente Maldonado" HorizontalOptions="Center" TextColor="#2D2D2D" FontAttributes="Italic"/>
+                            <Label Text="San Juan 325" HorizontalOptions="Center" TextColor="#2D2D2D" FontAttributes="Italic"/>
+                        </StackLayout>
+
+             
+                        <StackLayout>
+                            <Label Text="Sucursal Norte" HorizontalOptions="Center" TextColor="#2D2D2D" FontAttributes="Bold"/>
+                            <Image Source="cas2.jpg" WidthRequest="400" HeightRequest="400" Margin="10"/>
+                            <Label Text="Direccion:" HorizontalOptions="Center" TextColor="#2D2D2D" FontAttributes="Bold"/>
+                            <Label Text="San Juan de Dios" HorizontalOptions="Center" TextColor="#2D2D2D" FontAttributes="Italic"/>
+                            <Label Text="Panteon 395" HorizontalOptions="Center" TextColor="#2D2D2D" FontAttributes="Italic"/>
+                        </StackLayout>
+
+
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </ScrollView>
+    </Grid>
+</ContentPage>

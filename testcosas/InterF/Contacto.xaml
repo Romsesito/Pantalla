@@ -1,0 +1,69 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="testcosas.Contacto"
+             Title="Contacto"
+             Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions=".1*, .7*">
+
+        <Image Source="bl.png" Aspect="AspectFit" BackgroundColor="red"/>
+
+
+
+
+
+        <ScrollView Grid.Row="1" BackgroundColor="White">
+   
+
+            <Frame BackgroundColor="Red" CornerRadius="40" >
+         
+                <StackLayout>
+          
+                    <Label Text="Contactanos"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           TextColor="#2D2D2D"
+                           HorizontalOptions="Center"/>
+
+       
+                    <StackLayout Margin="20" Orientation="Horizontal">
+                    
+                        <Image Source="dotnet_bot.png" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start"/>
+            
+
+                        <Label Text="  +593 97 581 9340" FontSize="Medium" TextColor="White" HorizontalOptions="Center" FontAttributes="Bold"/>
+
+
+
+                    </StackLayout>
+
+
+
+                    <StackLayout Margin="20" Orientation="Horizontal">
+
+                        <Image Source="dotnet_bot.png" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start"/>
+
+
+                        <Label Text="  Instagram" FontSize="Medium" TextColor="White" HorizontalOptions="Center" FontAttributes="Bold"/>
+
+
+
+                    </StackLayout>
+
+
+
+                    <StackLayout Margin="20" Orientation="Horizontal">
+
+                        <Image Source="dotnet_bot.png" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start"/>
+
+
+                        <Label Text="  potitos@gmaieplay.com" FontSize="Medium" TextColor="White" HorizontalOptions="Center" FontAttributes="Bold"/>
+
+
+
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </ScrollView>
+    </Grid>
+</ContentPage>
